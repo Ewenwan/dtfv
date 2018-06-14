@@ -1,5 +1,5 @@
-./ucf.traj.mat
-./ucf.hog.mat
-./ucf.hof.mat
-./ucf.mbhx.mat
-./ucf.mbhy.mat
+../data/ucf.traj.mat
+../data/ucf.hog.mat
+../data/ucf.hof.mat
+../data/ucf.mbhx.mat
+../data/ucf.mbhy.mat
