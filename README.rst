@@ -16,14 +16,15 @@ Some highlights include:
 
 * State-of-the-art performance for large action/event video datasets
 
-It depends on:
+It depends on 依赖库:
 
-* Dense Trajectories (DT_)
+* Dense Trajectories (DT_)   IDT密集轨迹特征
     To extract DT features
 * VLFeat_
-    To train Gaussian Mixture Models
+    To train Gaussian Mixture Models gmm高斯混合模型
+    
 * ALGLIB_
-    To train PCA projection matrix
+    To train PCA projection matrix  PCA压缩矩阵
 
 Using linear SVM, we tested the code on two action/event classification datasets:
 
