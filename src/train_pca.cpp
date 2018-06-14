@@ -1,3 +1,6 @@
+/*
+训练一个pca压缩 系数矩阵
+*/
 #include <sstream>
 #include "pca.h"
 
