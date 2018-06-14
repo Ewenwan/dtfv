@@ -1,3 +1,6 @@
+/*
+pca特征压缩 有一个 系数变换矩阵 来源于alglib
+*/
 #include "pca.h"
 
 PCAWrapper::PCAWrapper(bool whitening)   {
