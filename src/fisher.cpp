@@ -1,3 +1,6 @@
+/*
+FV编码
+*/
 #include "fisher.h"
 
 FisherVector::FisherVector(string pcaDictFile, string codeBookFile, bool whitening)   {
