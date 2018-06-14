@@ -382,4 +382,3 @@ BenchPress/v_BenchPress_g20_c07.avi
 BenchPress/v_BenchPress_g21_c01.avi
 BenchPress/v_BenchPress_g21_c02.avi
 BenchPress/v_BenchPress_g21_c03.avi
-BenchPress/v_BenchPress_g21_c04.avi
