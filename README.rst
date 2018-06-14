@@ -1,5 +1,6 @@
 =====
 Fisher Vector implementation for Dense Trajectories (DTFV)
+为五种特征分别进行GMM编码
 =====
 
 This is a C++ implementation of Fisher Vector (FV) for Dense Trajectory (DT) features.
