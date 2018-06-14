@@ -1,3 +1,6 @@
+/*
+高斯混合模型 来源于 vlfeat
+*/
 #include "gmm.h"
 
 GMMWrapper::GMMWrapper()    {
