@@ -1,3 +1,6 @@
+/*
+训练一个gmm模型 码本
+*/
 #include "gmm.h"
 
 int main(int argc, char **argv) {
