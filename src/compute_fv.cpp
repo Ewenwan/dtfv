@@ -70,22 +70,34 @@ int main(int argc, char **argv) {
         fvs[3]->addPoint(mbhx, feat.x_pos, feat.y_pos);
         fvs[4]->addPoint(mbhy, feat.x_pos, feat.y_pos);
     }
+    cout<<"Points load complete."<<endl; 
 
-    cout<<"Points load complete."<<endl;
+
+    ofstream foutgfzy;//输出文件流 后面四种
+    string outNamegfzy = outputBase + "." + "gfzy" + ".fv.txt";//分别保存
+    foutgfzy.open(outNamegfzy.c_str());
     for (int i = 0; i < fvs.size(); i++)    {// 所有特征 
         ofstream fout;//输出文件流
         // TRAJ, HOG, HOF, MBHX, MBHY 分开编码
-        string outName = outputBase + "." + types[i] + ".fv.txt";
+        string outName = outputBase + "." + types[i] + ".fv.txt";//分别保存
         fout.open(outName.c_str());
+        // HOG, HOF, MBHX, MBHY 放在一起    
         // 获取编码向量
         vector<double> fv = fvs[i]->getFV();
         fout<<fv[0];
+        foutgfzy<<fv[0];
         for (int j = 1; j < fv.size(); j++)
+        {
             fout<<" "<<fv[j];//写入到文件保存
+            foutgfzy<<" "<<fv[j];//写入到文件保存            
+        }
+        //foutgfzy << 
         fout<<endl;
         fout.close();
         fvs[i]->clearFV();
     }
+    foutgfzy<<endl;
+    foutgfzy.close();
 
     for (int i = 0; i < fvs.size(); i++)
         delete fvs[i];//释放内存
